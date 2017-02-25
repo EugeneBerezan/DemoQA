@@ -1,7 +1,8 @@
-import pageObjects.*;
-import pageObjects.enums.InteractionBlockOptions;
 import org.testng.Assert;
 import org.testng.annotations.Test;
+import pageObjects.*;
+import pageObjects.enums.InteractionBlockOptions;
+import pageObjects.enums.WidgetBlockOptions;
 
 public class HomePageTests extends BaseTestClass {
 
@@ -22,7 +23,7 @@ public class HomePageTests extends BaseTestClass {
     }
 
     @Test
-    public void Check_If_Draggable_Form_Available() {
+    public void Check_If_Interaction_Draggable_Form_Available() {
 
         NavigateTo.InteractionBlock.selectOption(InteractionBlockOptions.DRAGGABLE);
 
@@ -31,7 +32,7 @@ public class HomePageTests extends BaseTestClass {
     }
 
     @Test
-    public void Check_If_Droppable_Form_Available() {
+    public void Check_If_Interaction_Droppable_Form_Available() {
 
         NavigateTo.InteractionBlock.selectOption(InteractionBlockOptions.DROPPABLE);
 
@@ -40,7 +41,7 @@ public class HomePageTests extends BaseTestClass {
     }
 
     @Test
-    public void Check_If_Resizable_Form_Available() {
+    public void Check_If_Interaction_Resizable_Form_Available() {
 
         NavigateTo.InteractionBlock.selectOption(InteractionBlockOptions.RESIZABLE);
 
@@ -49,7 +50,7 @@ public class HomePageTests extends BaseTestClass {
     }
 
     @Test
-    public void Check_If_Selectable_Form_Available() {
+    public void Check_If_Interaction_Selectable_Form_Available() {
 
         NavigateTo.InteractionBlock.selectOption(InteractionBlockOptions.SELECTABLE);
 
@@ -58,11 +59,74 @@ public class HomePageTests extends BaseTestClass {
     }
 
     @Test
-    public void Check_If_Sortable_Form_Available() {
+    public void Check_If_Interaction_Sortable_Form_Available() {
 
         NavigateTo.InteractionBlock.selectOption(InteractionBlockOptions.SORTABLE);
 
-        Assert.assertTrue(SelectablePage.isAt());
+        Assert.assertTrue(SortablePage.isAt());
+
+    }
+
+    @Test
+    public void Check_If_Widget_Accordion_Form_Available() {
+
+        NavigateTo.WidgetBlock.selectOption(WidgetBlockOptions.ACCORDION);
+
+        Assert.assertTrue(AccordionPage.isAt());
+
+    }
+
+    @Test
+    public void Check_If_Widget_Autocomplete_Form_Available() {
+
+        NavigateTo.WidgetBlock.selectOption(WidgetBlockOptions.AUTOCOMPLETE);
+
+        Assert.assertTrue(AutocompletePage.isAt());
+
+    }
+
+    @Test
+    public void Check_If_Widget_Datepicker_Form_Available() {
+
+        NavigateTo.WidgetBlock.selectOption(WidgetBlockOptions.DATEPICKER);
+
+        Assert.assertTrue(DatepickerPage.isAt());
+
+    }
+
+    @Test
+    public void Check_If_Widget_Menu_Form_Available() {
+
+        NavigateTo.WidgetBlock.selectOption(WidgetBlockOptions.MENU);
+
+        Assert.assertTrue(MenuPage.isAt());
+
+    }
+
+    @Test
+    public void Check_If_Widget_Slider_Form_Available() {
+
+        NavigateTo.WidgetBlock.selectOption(WidgetBlockOptions.SLIDER);
+
+        Assert.assertTrue(SliderPage.isAt());
+
+    }
+
+    @Test
+    public void Check_If_Widget_Tabs_Form_Available() {
+
+        NavigateTo.WidgetBlock.selectOption(WidgetBlockOptions.TABS);
+
+        Assert.assertTrue(TabsPage.isAt());
+
+    }
+
+    @Test
+    public void Check_If_Widget_Tooltip_Form_Available() {
+
+        NavigateTo.WidgetBlock.selectOption(WidgetBlockOptions.TOOLTIP);
+
+        Assert.assertTrue(TooltipPage.isAt());
 
     }
 }

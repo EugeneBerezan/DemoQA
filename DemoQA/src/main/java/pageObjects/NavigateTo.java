@@ -23,7 +23,7 @@ public class NavigateTo extends BasePage {
         private static final By INTERACTION_BLOCK = By.xpath("//h3[text()='interaction']//ancestor::aside");
         private static final By DROPPABLE_OPTION = By.linkText("Droppable");
         private static final By DRAGGABLE_OPTION = By.linkText("Draggable");
-        private static final By RESIZABLE_OPTION = By.linkText("Resizabale");
+        private static final By RESIZABLE_OPTION = By.linkText("Resizable");
         private static final By SELECTABLE_OPTION = By.linkText("Selectable");
         private static final By SORTABLE_OPTION = By.linkText("Sortable");
 
@@ -71,7 +71,7 @@ public class NavigateTo extends BasePage {
         private static final By TABS_OPTION = By.linkText("Tabs");
         private static final By TOOLTIP_OPTION = By.linkText("Tooltip");
 
-        public void selectOption(WidgetBlockOptions widgetBlockOptions) {
+        public static void selectOption(WidgetBlockOptions widgetBlockOptions) {
             switch (widgetBlockOptions) {
                 case ACCORDION:
                     select(ACCORDION_OPTION);
@@ -107,7 +107,7 @@ public class NavigateTo extends BasePage {
             }
         }
 
-        void select(By optionLocator) {
+        static void select(By optionLocator) {
             selectOptionInBlock(WIDGET_BLOCK, optionLocator);
         }
     }
