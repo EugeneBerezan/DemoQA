@@ -1,0 +1,9 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Smoke suite" parallel="tests">
+    <test name="FirefoxTest">
+        <parameter name="browser" value="Firefox"/>
+        <classes>
+            <class name="HomePageTests"/>
+        </classes>
+    </test>
+</suite>

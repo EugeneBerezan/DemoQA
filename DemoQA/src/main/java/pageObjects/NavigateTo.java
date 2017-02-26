@@ -6,14 +6,17 @@ import pageObjects.enums.InteractionBlockOptions;
 import pageObjects.enums.WidgetBlockOptions;
 import utils.Driver;
 
+import java.net.MalformedURLException;
+
 public class NavigateTo extends BasePage {
 
     public static class RegistrationBlock {
 
         private static final By REGISTRATION = By.xpath("//aside//a[text()='Registration']");
 
-        public static RegistrationPage selectOption() throws InterruptedException {
-            Driver.getInstance().findElement(REGISTRATION).click();
+        public static RegistrationPage selectOption() throws InterruptedException, MalformedURLException {
+//            Driver.getInstance().findElement(REGISTRATION).click();
+            Driver.getGridInstance().findElement(REGISTRATION).click();
             return new RegistrationPage();
         }
     }
@@ -27,7 +30,7 @@ public class NavigateTo extends BasePage {
         private static final By SELECTABLE_OPTION = By.linkText("Selectable");
         private static final By SORTABLE_OPTION = By.linkText("Sortable");
 
-        public static void selectOption(InteractionBlockOptions interactionBlockOptions) {
+        public static void selectOption(InteractionBlockOptions interactionBlockOptions) throws MalformedURLException {
             switch (interactionBlockOptions) {
                 case DRAGGABLE:
                     select(DRAGGABLE_OPTION);
@@ -55,7 +58,7 @@ public class NavigateTo extends BasePage {
             }
         }
 
-        static void select(By optionLocator) {
+        static void select(By optionLocator) throws MalformedURLException {
             selectOptionInBlock(INTERACTION_BLOCK, optionLocator);
         }
     }
@@ -71,7 +74,7 @@ public class NavigateTo extends BasePage {
         private static final By TABS_OPTION = By.linkText("Tabs");
         private static final By TOOLTIP_OPTION = By.linkText("Tooltip");
 
-        public static void selectOption(WidgetBlockOptions widgetBlockOptions) {
+        public static void selectOption(WidgetBlockOptions widgetBlockOptions) throws MalformedURLException {
             switch (widgetBlockOptions) {
                 case ACCORDION:
                     select(ACCORDION_OPTION);
@@ -107,7 +110,7 @@ public class NavigateTo extends BasePage {
             }
         }
 
-        static void select(By optionLocator) {
+        static void select(By optionLocator) throws MalformedURLException {
             selectOptionInBlock(WIDGET_BLOCK, optionLocator);
         }
     }

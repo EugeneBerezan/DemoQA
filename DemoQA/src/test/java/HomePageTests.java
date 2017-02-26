@@ -4,17 +4,19 @@ import pageObjects.*;
 import pageObjects.enums.InteractionBlockOptions;
 import pageObjects.enums.WidgetBlockOptions;
 
+import java.net.MalformedURLException;
+
 public class HomePageTests extends BaseTestClass {
 
     @Test
-    public void Check_If_Home_Page_Available() {
+    public void Check_If_Home_Page_Available() throws MalformedURLException {
 
         Assert.assertTrue(HomePage.isAt());
 
     }
 
     @Test
-    public void Check_If_Registration_Form_Available() throws InterruptedException {
+    public void Check_If_Registration_Form_Available() throws InterruptedException, MalformedURLException {
 
         NavigateTo.RegistrationBlock.selectOption();
 
@@ -23,7 +25,7 @@ public class HomePageTests extends BaseTestClass {
     }
 
     @Test
-    public void Check_If_Interaction_Draggable_Form_Available() {
+    public void Check_If_Interaction_Draggable_Form_Available() throws MalformedURLException {
 
         NavigateTo.InteractionBlock.selectOption(InteractionBlockOptions.DRAGGABLE);
 
@@ -32,7 +34,7 @@ public class HomePageTests extends BaseTestClass {
     }
 
     @Test
-    public void Check_If_Interaction_Droppable_Form_Available() {
+    public void Check_If_Interaction_Droppable_Form_Available() throws MalformedURLException {
 
         NavigateTo.InteractionBlock.selectOption(InteractionBlockOptions.DROPPABLE);
 
@@ -41,7 +43,7 @@ public class HomePageTests extends BaseTestClass {
     }
 
     @Test
-    public void Check_If_Interaction_Resizable_Form_Available() {
+    public void Check_If_Interaction_Resizable_Form_Available() throws MalformedURLException {
 
         NavigateTo.InteractionBlock.selectOption(InteractionBlockOptions.RESIZABLE);
 
@@ -50,7 +52,7 @@ public class HomePageTests extends BaseTestClass {
     }
 
     @Test
-    public void Check_If_Interaction_Selectable_Form_Available() {
+    public void Check_If_Interaction_Selectable_Form_Available() throws MalformedURLException {
 
         NavigateTo.InteractionBlock.selectOption(InteractionBlockOptions.SELECTABLE);
 
@@ -59,7 +61,7 @@ public class HomePageTests extends BaseTestClass {
     }
 
     @Test
-    public void Check_If_Interaction_Sortable_Form_Available() {
+    public void Check_If_Interaction_Sortable_Form_Available() throws MalformedURLException {
 
         NavigateTo.InteractionBlock.selectOption(InteractionBlockOptions.SORTABLE);
 
@@ -68,7 +70,7 @@ public class HomePageTests extends BaseTestClass {
     }
 
     @Test
-    public void Check_If_Widget_Accordion_Form_Available() {
+    public void Check_If_Widget_Accordion_Form_Available() throws MalformedURLException {
 
         NavigateTo.WidgetBlock.selectOption(WidgetBlockOptions.ACCORDION);
 
@@ -77,7 +79,7 @@ public class HomePageTests extends BaseTestClass {
     }
 
     @Test
-    public void Check_If_Widget_Autocomplete_Form_Available() {
+    public void Check_If_Widget_Autocomplete_Form_Available() throws MalformedURLException {
 
         NavigateTo.WidgetBlock.selectOption(WidgetBlockOptions.AUTOCOMPLETE);
 
@@ -86,7 +88,7 @@ public class HomePageTests extends BaseTestClass {
     }
 
     @Test
-    public void Check_If_Widget_Datepicker_Form_Available() {
+    public void Check_If_Widget_Datepicker_Form_Available() throws MalformedURLException {
 
         NavigateTo.WidgetBlock.selectOption(WidgetBlockOptions.DATEPICKER);
 
@@ -95,7 +97,7 @@ public class HomePageTests extends BaseTestClass {
     }
 
     @Test
-    public void Check_If_Widget_Menu_Form_Available() {
+    public void Check_If_Widget_Menu_Form_Available() throws MalformedURLException {
 
         NavigateTo.WidgetBlock.selectOption(WidgetBlockOptions.MENU);
 
@@ -104,7 +106,7 @@ public class HomePageTests extends BaseTestClass {
     }
 
     @Test
-    public void Check_If_Widget_Slider_Form_Available() {
+    public void Check_If_Widget_Slider_Form_Available() throws MalformedURLException {
 
         NavigateTo.WidgetBlock.selectOption(WidgetBlockOptions.SLIDER);
 
@@ -113,7 +115,7 @@ public class HomePageTests extends BaseTestClass {
     }
 
     @Test
-    public void Check_If_Widget_Tabs_Form_Available() {
+    public void Check_If_Widget_Tabs_Form_Available() throws MalformedURLException {
 
         NavigateTo.WidgetBlock.selectOption(WidgetBlockOptions.TABS);
 
@@ -122,7 +124,7 @@ public class HomePageTests extends BaseTestClass {
     }
 
     @Test
-    public void Check_If_Widget_Tooltip_Form_Available() {
+    public void Check_If_Widget_Tooltip_Form_Available() throws MalformedURLException {
 
         NavigateTo.WidgetBlock.selectOption(WidgetBlockOptions.TOOLTIP);
 
