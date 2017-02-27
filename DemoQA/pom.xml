@@ -22,11 +22,6 @@
                 <artifactId>maven-surefire-plugin</artifactId>
                 <version>2.19.1</version>
                 <configuration>
-                    <systemPropertyVariables>
-                        <propertyName>
-                            ${browserName}
-                        </propertyName>
-                    </systemPropertyVariables>
                     <suiteXmlFiles>
                         <suiteXmlFile>src/test/testNG/${test_suite}.xml</suiteXmlFile>
                     </suiteXmlFiles>
