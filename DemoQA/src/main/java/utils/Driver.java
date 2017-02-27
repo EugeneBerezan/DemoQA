@@ -17,8 +17,8 @@ public class Driver {
     private static final int TIME_TO_WAIT_IN_SECONDS = 10;
     private static WebDriver driver = null;
     private static String nodeURL = "http://localhost:4446/wd/hub";
-    //    private static String browser = System.getProperty("browserName");
-    private static String browser = "firefox"; // stub
+    private static String browser = System.getProperty("browserName");
+//    private static String browser = "firefox"; // stub
 
     private Driver() {
 
