@@ -18,7 +18,7 @@ public class Driver {
     private static WebDriver driver = null;
     private static String nodeURL = "http://localhost:4446/wd/hub";
     //    private static String browser = System.getProperty("browserName");
-    private static String browser = "firefox"; // stub
+    private static String browser = "Firefox"; // stub
 
     private Driver() {
 
@@ -58,7 +58,7 @@ public class Driver {
                 driver = new RemoteWebDriver(new URL(nodeURL), capabilitiesFirefox);
                 break;
             default:
-                new NoSuchElementException("Invalid browser name");
+                throw new NoSuchElementException("Invalid browser name");
         }
         return driver;
     }
@@ -74,7 +74,7 @@ public class Driver {
                 driver = new FirefoxDriver();
                 break;
             default:
-                new NoSuchElementException("Invalid browser name");
+                throw new NoSuchElementException("Invalid browser name");
         }
         return driver;
     }
