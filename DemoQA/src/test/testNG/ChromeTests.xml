@@ -1,7 +1,6 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="Smoke suite" parallel="tests">
     <test name="ChromeTest">
-        <parameter name="browser" value="Chrome"/>
         <classes>
             <class name="HomePageTests"/>
         </classes>

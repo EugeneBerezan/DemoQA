@@ -10,7 +10,6 @@ public class HomePage extends BasePage {
     private static final String HOME_TEXT = "Home";
 
     public static void Goto() throws MalformedURLException {
-//        Driver.getGridInstance().get(HOME_PAGE_URL);
         Driver.getInstance().get(HOME_PAGE_URL);
     }
 

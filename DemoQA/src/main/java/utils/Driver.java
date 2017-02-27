@@ -15,11 +15,10 @@ import java.util.concurrent.TimeUnit;
 public class Driver {
 
     private static final int TIME_TO_WAIT_IN_SECONDS = 10;
-    //    private static String browser = null;
     private static WebDriver driver = null;
     private static String nodeURL = "http://localhost:4446/wd/hub";
     //    private static String browser = System.getProperty("browserName");
-    private static String browser = "firefox";
+    private static String browser = "firefox"; // stub
 
     private Driver() {
 
@@ -32,21 +31,14 @@ public class Driver {
     public static WebDriver getInstance() throws MalformedURLException {
         if (driver == null) {
             getDriver(browser);
-//            getGrid(browser);
+//            getHub(browser);
             driver.manage().window().maximize();
             driver.manage().timeouts().implicitlyWait(TIME_TO_WAIT_IN_SECONDS, TimeUnit.SECONDS);
         }
         return driver;
     }
 
-//    public static WebDriver getGridInstance() throws MalformedURLException {
-//        if (driver == null) {
-//            getGrid(browser);
-//        }
-//        return driver;
-//    }
-
-    private static WebDriver getGrid(String browser) throws MalformedURLException {
+    private static WebDriver getHub(String browser) throws MalformedURLException {
         switch (browser.toLowerCase()) {
             case "chrome":
                 System.setProperty("webdriver.chrome.driver", "src/main/resources/chromedriver");
@@ -89,7 +81,6 @@ public class Driver {
 
     public static void close() throws MalformedURLException {
         Driver.getInstance().quit();
-//        Driver.getGridInstance().quit();
         driver = null;
     }
 

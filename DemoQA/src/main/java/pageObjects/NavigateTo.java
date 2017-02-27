@@ -16,7 +16,6 @@ public class NavigateTo extends BasePage {
 
         public static RegistrationPage selectOption() throws InterruptedException, MalformedURLException {
             Driver.getInstance().findElement(REGISTRATION).click();
-//            Driver.getGridInstance().findElement(REGISTRATION).click();
             return new RegistrationPage();
         }
     }

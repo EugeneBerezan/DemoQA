@@ -7,12 +7,9 @@ import java.net.MalformedURLException;
 
 public class BaseTestClass {
 
-    //    @Parameters("browser")
     @BeforeMethod
     public void setUp() throws InterruptedException, MalformedURLException {
-//        Driver.setBrowser(browser);
         Driver.getInstance();
-//        Driver.getGridInstance();
         HomePage.Goto();
     }
 
