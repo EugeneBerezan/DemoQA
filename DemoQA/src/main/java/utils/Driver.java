@@ -39,8 +39,8 @@ public class Driver {
     }
 
     private static WebDriver getHub(String browser) throws MalformedURLException {
-        switch (browser.toLowerCase()) {
-            case "chrome":
+        switch (browser) {
+            case "Chrome":
                 System.setProperty("webdriver.chrome.driver", "src/main/resources/chromedriver");
                 DesiredCapabilities capabilitiesChrome = DesiredCapabilities.chrome();
                 capabilitiesChrome.setBrowserName(browser);
@@ -48,7 +48,7 @@ public class Driver {
                 capabilitiesChrome.setVersion("");
                 driver = new RemoteWebDriver(new URL(nodeURL), capabilitiesChrome);
                 break;
-            case "firefox":
+            case "Firefox":
                 System.setProperty("webdriver.gecko.driver", "src/main/resources/geckodriver");
                 DesiredCapabilities capabilitiesFirefox = DesiredCapabilities.firefox();
                 capabilitiesFirefox.setBrowserName(browser);
@@ -64,12 +64,12 @@ public class Driver {
     }
 
     private static WebDriver getDriver(String browser) {
-        switch (browser.toLowerCase()) {
-            case "chrome":
+        switch (browser) {
+            case "Chrome":
                 System.setProperty("webdriver.chrome.driver", "src/main/resources/chromedriver");
                 driver = new ChromeDriver();
                 break;
-            case "firefox":
+            case "Firefox":
                 System.setProperty("webdriver.gecko.driver", "src/main/resources/geckodriver");
                 driver = new FirefoxDriver();
                 break;
