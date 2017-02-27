@@ -9,7 +9,7 @@ public class BaseTestClass {
 
     //    @Parameters("browser")
     @BeforeMethod
-    public void setUp(String browser) throws InterruptedException, MalformedURLException {
+    public void setUp() throws InterruptedException, MalformedURLException {
 //        Driver.setBrowser(browser);
         Driver.getInstance();
 //        Driver.getGridInstance();
