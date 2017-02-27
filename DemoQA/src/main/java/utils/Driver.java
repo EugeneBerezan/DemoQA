@@ -15,9 +15,10 @@ import java.util.concurrent.TimeUnit;
 public class Driver {
 
     private static final int TIME_TO_WAIT_IN_SECONDS = 10;
-    private static String browser = null;
+    //    private static String browser = null;
     private static WebDriver driver = null;
     private static String nodeURL = "http://localhost:4446/wd/hub";
+    private static String browser = System.getProperty("BROWSERNAME");
 
     private Driver() {
 
