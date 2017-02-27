@@ -15,8 +15,8 @@ public class NavigateTo extends BasePage {
         private static final By REGISTRATION = By.xpath("//aside//a[text()='Registration']");
 
         public static RegistrationPage selectOption() throws InterruptedException, MalformedURLException {
-//            Driver.getInstance().findElement(REGISTRATION).click();
-            Driver.getGridInstance().findElement(REGISTRATION).click();
+            Driver.getInstance().findElement(REGISTRATION).click();
+//            Driver.getGridInstance().findElement(REGISTRATION).click();
             return new RegistrationPage();
         }
     }

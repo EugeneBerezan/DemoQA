@@ -27,21 +27,22 @@ public class Driver {
         Driver.browser = browser;
     }
 
-    public static WebDriver getInstance() {
+    public static WebDriver getInstance() throws MalformedURLException {
         if (driver == null) {
-            getDriver(browser);
+//            getDriver(browser);
+            getGrid(browser);
             driver.manage().window().maximize();
             driver.manage().timeouts().implicitlyWait(TIME_TO_WAIT_IN_SECONDS, TimeUnit.SECONDS);
         }
         return driver;
     }
 
-    public static WebDriver getGridInstance() throws MalformedURLException {
-        if (driver == null) {
-            getGrid(browser);
-        }
-        return driver;
-    }
+//    public static WebDriver getGridInstance() throws MalformedURLException {
+//        if (driver == null) {
+//            getGrid(browser);
+//        }
+//        return driver;
+//    }
 
     private static WebDriver getGrid(String browser) throws MalformedURLException {
         switch (browser.toLowerCase()) {
@@ -84,8 +85,8 @@ public class Driver {
     }
 
     public static void close() throws MalformedURLException {
-//        Driver.getInstance().quit();
-        Driver.getGridInstance().quit();
+        Driver.getInstance().quit();
+//        Driver.getGridInstance().quit();
         driver = null;
     }
 

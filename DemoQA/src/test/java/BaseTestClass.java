@@ -12,7 +12,8 @@ public class BaseTestClass {
     @BeforeMethod
     public void setUp(String browser) throws InterruptedException, MalformedURLException {
         Driver.setBrowser(browser);
-        Driver.getGridInstance();
+        Driver.getInstance();
+//        Driver.getGridInstance();
         HomePage.Goto();
     }
 

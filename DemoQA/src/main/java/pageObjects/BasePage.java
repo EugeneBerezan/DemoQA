@@ -18,7 +18,7 @@ abstract class BasePage extends AbstractClass {
     }
 
     static boolean isAt(String h1TextOnPage) throws MalformedURLException {
-//        return h1TextOnPage.equals(Driver.getInstance().findElement(header(h1TextOnPage)).getText());
-        return h1TextOnPage.equals(Driver.getGridInstance().findElement(header(h1TextOnPage)).getText());
+        return h1TextOnPage.equals(Driver.getInstance().findElement(header(h1TextOnPage)).getText());
+//        return h1TextOnPage.equals(Driver.getGridInstance().findElement(header(h1TextOnPage)).getText());
     }
 }
