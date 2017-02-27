@@ -62,6 +62,7 @@ public class Driver {
                 capabilitiesFirefox.setBrowserName(browser);
                 capabilitiesFirefox.setPlatform(Platform.LINUX);
                 capabilitiesFirefox.setVersion("");
+                capabilitiesFirefox.setCapability("marionette", false);
                 driver = new RemoteWebDriver(new URL(nodeURL), capabilitiesFirefox);
                 break;
             default:
