@@ -18,8 +18,8 @@ public class Driver {
     //    private static String browser = null;
     private static WebDriver driver = null;
     private static String nodeURL = "http://localhost:4446/wd/hub";
-    private static String browser = System.getProperty("browserName");
-//    private static String browser = "firefox";
+    //    private static String browser = System.getProperty("browserName");
+    private static String browser = "firefox";
 
     private Driver() {
 
