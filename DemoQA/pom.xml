@@ -24,7 +24,7 @@
                 <configuration>
                     <systemPropertyVariables>
                         <propertyName>
-
+                            ${browserName}
                         </propertyName>
                     </systemPropertyVariables>
                     <suiteXmlFiles>
