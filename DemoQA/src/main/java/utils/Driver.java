@@ -25,8 +25,8 @@ public class Driver {
 
     public static WebDriver getInstance() throws MalformedURLException {
         if (driver == null) {
-//            getDriver(browser);
-            getHub(browser);
+            getDriver(browser);
+//            getHub(browser);
             driver.manage().window().maximize();
             driver.manage().timeouts().implicitlyWait(TIME_TO_WAIT_IN_SECONDS, TimeUnit.SECONDS);
         }
