@@ -1,0 +1,764 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <meta charset='utf-8'>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" />  
+    <script type="text/javascript" src="jquery-1.7.1.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>
+    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <br/>
+      <span class="top-banner-font-1">1 suite</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" class="collapse-all-link" title="Collapse/expand all the suites">
+          <img class="collapse-all-icon" src="collapseall.gif">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" class="navigator-link" panel-name="suite-Smoke_suite">
+              <span class="suite-name border-skipped">Smoke suite</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="test-xml-Smoke_suite">
+                    <span>Smoke.xml</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="testlist-Smoke_suite">
+                    <span class="test-stats">1 test</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="group-Smoke_suite">
+                    <span>0 groups</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="times-Smoke_suite">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="reporter-Smoke_suite">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="ignored-methods-Smoke_suite">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="chronological-Smoke_suite">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">14 methods,  14 skipped,  </span>
+                  </li>
+                  <li>
+                    <span class="method-list-title skipped">Skipped methods</span>
+                    <span class="show-or-hide-methods skipped">
+                      <a href="#" panel-name="suite-Smoke_suite" class="hide-methods skipped suite-Smoke_suite"> (hide)</a> <!-- hide-methods skipped suite-Smoke_suite -->
+                      <a href="#" panel-name="suite-Smoke_suite" class="show-methods skipped suite-Smoke_suite"> (show)</a> <!-- show-methods skipped suite-Smoke_suite -->
+                    </span>
+                    <div class="method-list-content skipped suite-Smoke_suite">
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Smoke_suite" title="HomePageTests" hash-for-method="Check_If_Home_Page_Available">Check_If_Home_Page_Available</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Smoke_suite" title="HomePageTests" hash-for-method="Check_If_Interaction_Draggable_Form_Available">Check_If_Interaction_Draggable_Form_Available</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Smoke_suite" title="HomePageTests" hash-for-method="Check_If_Interaction_Droppable_Form_Available">Check_If_Interaction_Droppable_Form_Available</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Smoke_suite" title="HomePageTests" hash-for-method="Check_If_Interaction_Resizable_Form_Available">Check_If_Interaction_Resizable_Form_Available</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Smoke_suite" title="HomePageTests" hash-for-method="Check_If_Interaction_Selectable_Form_Available">Check_If_Interaction_Selectable_Form_Available</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Smoke_suite" title="HomePageTests" hash-for-method="Check_If_Interaction_Sortable_Form_Available">Check_If_Interaction_Sortable_Form_Available</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Smoke_suite" title="HomePageTests" hash-for-method="Check_If_Registration_Form_Available">Check_If_Registration_Form_Available</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Smoke_suite" title="HomePageTests" hash-for-method="Check_If_Widget_Accordion_Form_Available">Check_If_Widget_Accordion_Form_Available</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Smoke_suite" title="HomePageTests" hash-for-method="Check_If_Widget_Autocomplete_Form_Available">Check_If_Widget_Autocomplete_Form_Available</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Smoke_suite" title="HomePageTests" hash-for-method="Check_If_Widget_Datepicker_Form_Available">Check_If_Widget_Datepicker_Form_Available</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Smoke_suite" title="HomePageTests" hash-for-method="Check_If_Widget_Menu_Form_Available">Check_If_Widget_Menu_Form_Available</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Smoke_suite" title="HomePageTests" hash-for-method="Check_If_Widget_Slider_Form_Available">Check_If_Widget_Slider_Form_Available</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Smoke_suite" title="HomePageTests" hash-for-method="Check_If_Widget_Tabs_Form_Available">Check_If_Widget_Tabs_Form_Available</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Smoke_suite" title="HomePageTests" hash-for-method="Check_If_Widget_Tooltip_Form_Available">Check_If_Widget_Tooltip_Form_Available</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content skipped suite-Smoke_suite -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-Smoke_suite" class="panel Smoke_suite">
+          <div class="suite-Smoke_suite-class-skipped">
+            <div class="main-panel-header rounded-window-top">
+              <img src="skipped.png"/>
+              <span class="class-name">HomePageTests</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="Check_If_Home_Page_Available">
+                  </a> <!-- Check_If_Home_Page_Available -->
+                  <span class="method-name">Check_If_Home_Page_Available</span>
+                  <div class="stack-trace">org.openqa.selenium.SessionNotCreatedException: Unable to create new remote session. desired capabilities = Capabilities [{marionette=false, browserName=Firefox, version=, platform=LINUX}], required capabilities = Capabilities [{}]
+Build info: version: &apos;3.1.0&apos;, revision: &apos;b94c902&apos;, time: &apos;2017-02-16 12:21:31 -0800&apos;
+System info: host: &apos;Yevheniis-MBP&apos;, ip: &apos;fe80:0:0:0:149b:efe0:c7e5:50fa%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.12.3&apos;, java.version: &apos;1.8.0_121&apos;
+Driver info: driver.version: Driver
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:91)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:141)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:601)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:241)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:128)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:155)
+	at utils.Driver.getHub(Driver.java:53)
+	at utils.Driver.getInstance(Driver.java:29)
+	at BaseTestClass.setUp(BaseTestClass.java:12)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+... Removed 18 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="Check_If_Interaction_Draggable_Form_Available">
+                  </a> <!-- Check_If_Interaction_Draggable_Form_Available -->
+                  <span class="method-name">Check_If_Interaction_Draggable_Form_Available</span>
+                  <div class="stack-trace">org.openqa.selenium.SessionNotCreatedException: Unable to create new remote session. desired capabilities = Capabilities [{marionette=false, browserName=Firefox, version=, platform=LINUX}], required capabilities = Capabilities [{}]
+Build info: version: &apos;3.1.0&apos;, revision: &apos;b94c902&apos;, time: &apos;2017-02-16 12:21:31 -0800&apos;
+System info: host: &apos;Yevheniis-MBP&apos;, ip: &apos;fe80:0:0:0:149b:efe0:c7e5:50fa%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.12.3&apos;, java.version: &apos;1.8.0_121&apos;
+Driver info: driver.version: Driver
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:91)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:141)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:601)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:241)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:128)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:155)
+	at utils.Driver.getHub(Driver.java:53)
+	at utils.Driver.getInstance(Driver.java:29)
+	at BaseTestClass.setUp(BaseTestClass.java:12)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+... Removed 18 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="Check_If_Interaction_Droppable_Form_Available">
+                  </a> <!-- Check_If_Interaction_Droppable_Form_Available -->
+                  <span class="method-name">Check_If_Interaction_Droppable_Form_Available</span>
+                  <div class="stack-trace">org.openqa.selenium.SessionNotCreatedException: Unable to create new remote session. desired capabilities = Capabilities [{marionette=false, browserName=Firefox, version=, platform=LINUX}], required capabilities = Capabilities [{}]
+Build info: version: &apos;3.1.0&apos;, revision: &apos;b94c902&apos;, time: &apos;2017-02-16 12:21:31 -0800&apos;
+System info: host: &apos;Yevheniis-MBP&apos;, ip: &apos;fe80:0:0:0:149b:efe0:c7e5:50fa%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.12.3&apos;, java.version: &apos;1.8.0_121&apos;
+Driver info: driver.version: Driver
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:91)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:141)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:601)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:241)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:128)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:155)
+	at utils.Driver.getHub(Driver.java:53)
+	at utils.Driver.getInstance(Driver.java:29)
+	at BaseTestClass.setUp(BaseTestClass.java:12)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+... Removed 18 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="Check_If_Interaction_Resizable_Form_Available">
+                  </a> <!-- Check_If_Interaction_Resizable_Form_Available -->
+                  <span class="method-name">Check_If_Interaction_Resizable_Form_Available</span>
+                  <div class="stack-trace">org.openqa.selenium.SessionNotCreatedException: Unable to create new remote session. desired capabilities = Capabilities [{marionette=false, browserName=Firefox, version=, platform=LINUX}], required capabilities = Capabilities [{}]
+Build info: version: &apos;3.1.0&apos;, revision: &apos;b94c902&apos;, time: &apos;2017-02-16 12:21:31 -0800&apos;
+System info: host: &apos;Yevheniis-MBP&apos;, ip: &apos;fe80:0:0:0:149b:efe0:c7e5:50fa%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.12.3&apos;, java.version: &apos;1.8.0_121&apos;
+Driver info: driver.version: Driver
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:91)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:141)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:601)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:241)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:128)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:155)
+	at utils.Driver.getHub(Driver.java:53)
+	at utils.Driver.getInstance(Driver.java:29)
+	at BaseTestClass.setUp(BaseTestClass.java:12)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+... Removed 18 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="Check_If_Interaction_Selectable_Form_Available">
+                  </a> <!-- Check_If_Interaction_Selectable_Form_Available -->
+                  <span class="method-name">Check_If_Interaction_Selectable_Form_Available</span>
+                  <div class="stack-trace">org.openqa.selenium.SessionNotCreatedException: Unable to create new remote session. desired capabilities = Capabilities [{marionette=false, browserName=Firefox, version=, platform=LINUX}], required capabilities = Capabilities [{}]
+Build info: version: &apos;3.1.0&apos;, revision: &apos;b94c902&apos;, time: &apos;2017-02-16 12:21:31 -0800&apos;
+System info: host: &apos;Yevheniis-MBP&apos;, ip: &apos;fe80:0:0:0:149b:efe0:c7e5:50fa%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.12.3&apos;, java.version: &apos;1.8.0_121&apos;
+Driver info: driver.version: Driver
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:91)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:141)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:601)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:241)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:128)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:155)
+	at utils.Driver.getHub(Driver.java:53)
+	at utils.Driver.getInstance(Driver.java:29)
+	at BaseTestClass.setUp(BaseTestClass.java:12)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+... Removed 18 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="Check_If_Interaction_Sortable_Form_Available">
+                  </a> <!-- Check_If_Interaction_Sortable_Form_Available -->
+                  <span class="method-name">Check_If_Interaction_Sortable_Form_Available</span>
+                  <div class="stack-trace">org.openqa.selenium.SessionNotCreatedException: Unable to create new remote session. desired capabilities = Capabilities [{marionette=false, browserName=Firefox, version=, platform=LINUX}], required capabilities = Capabilities [{}]
+Build info: version: &apos;3.1.0&apos;, revision: &apos;b94c902&apos;, time: &apos;2017-02-16 12:21:31 -0800&apos;
+System info: host: &apos;Yevheniis-MBP&apos;, ip: &apos;fe80:0:0:0:149b:efe0:c7e5:50fa%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.12.3&apos;, java.version: &apos;1.8.0_121&apos;
+Driver info: driver.version: Driver
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:91)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:141)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:601)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:241)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:128)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:155)
+	at utils.Driver.getHub(Driver.java:53)
+	at utils.Driver.getInstance(Driver.java:29)
+	at BaseTestClass.setUp(BaseTestClass.java:12)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+... Removed 18 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="Check_If_Registration_Form_Available">
+                  </a> <!-- Check_If_Registration_Form_Available -->
+                  <span class="method-name">Check_If_Registration_Form_Available</span>
+                  <div class="stack-trace">org.openqa.selenium.SessionNotCreatedException: Unable to create new remote session. desired capabilities = Capabilities [{marionette=false, browserName=Firefox, version=, platform=LINUX}], required capabilities = Capabilities [{}]
+Build info: version: &apos;3.1.0&apos;, revision: &apos;b94c902&apos;, time: &apos;2017-02-16 12:21:31 -0800&apos;
+System info: host: &apos;Yevheniis-MBP&apos;, ip: &apos;fe80:0:0:0:149b:efe0:c7e5:50fa%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.12.3&apos;, java.version: &apos;1.8.0_121&apos;
+Driver info: driver.version: Driver
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:91)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:141)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:601)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:241)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:128)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:155)
+	at utils.Driver.getHub(Driver.java:53)
+	at utils.Driver.getInstance(Driver.java:29)
+	at BaseTestClass.setUp(BaseTestClass.java:12)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+... Removed 18 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="Check_If_Widget_Accordion_Form_Available">
+                  </a> <!-- Check_If_Widget_Accordion_Form_Available -->
+                  <span class="method-name">Check_If_Widget_Accordion_Form_Available</span>
+                  <div class="stack-trace">org.openqa.selenium.SessionNotCreatedException: Unable to create new remote session. desired capabilities = Capabilities [{marionette=false, browserName=Firefox, version=, platform=LINUX}], required capabilities = Capabilities [{}]
+Build info: version: &apos;3.1.0&apos;, revision: &apos;b94c902&apos;, time: &apos;2017-02-16 12:21:31 -0800&apos;
+System info: host: &apos;Yevheniis-MBP&apos;, ip: &apos;fe80:0:0:0:149b:efe0:c7e5:50fa%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.12.3&apos;, java.version: &apos;1.8.0_121&apos;
+Driver info: driver.version: Driver
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:91)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:141)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:601)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:241)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:128)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:155)
+	at utils.Driver.getHub(Driver.java:53)
+	at utils.Driver.getInstance(Driver.java:29)
+	at BaseTestClass.setUp(BaseTestClass.java:12)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+... Removed 18 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="Check_If_Widget_Autocomplete_Form_Available">
+                  </a> <!-- Check_If_Widget_Autocomplete_Form_Available -->
+                  <span class="method-name">Check_If_Widget_Autocomplete_Form_Available</span>
+                  <div class="stack-trace">org.openqa.selenium.SessionNotCreatedException: Unable to create new remote session. desired capabilities = Capabilities [{marionette=false, browserName=Firefox, version=, platform=LINUX}], required capabilities = Capabilities [{}]
+Build info: version: &apos;3.1.0&apos;, revision: &apos;b94c902&apos;, time: &apos;2017-02-16 12:21:31 -0800&apos;
+System info: host: &apos;Yevheniis-MBP&apos;, ip: &apos;fe80:0:0:0:149b:efe0:c7e5:50fa%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.12.3&apos;, java.version: &apos;1.8.0_121&apos;
+Driver info: driver.version: Driver
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:91)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:141)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:601)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:241)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:128)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:155)
+	at utils.Driver.getHub(Driver.java:53)
+	at utils.Driver.getInstance(Driver.java:29)
+	at BaseTestClass.setUp(BaseTestClass.java:12)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+... Removed 18 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="Check_If_Widget_Datepicker_Form_Available">
+                  </a> <!-- Check_If_Widget_Datepicker_Form_Available -->
+                  <span class="method-name">Check_If_Widget_Datepicker_Form_Available</span>
+                  <div class="stack-trace">org.openqa.selenium.SessionNotCreatedException: Unable to create new remote session. desired capabilities = Capabilities [{marionette=false, browserName=Firefox, version=, platform=LINUX}], required capabilities = Capabilities [{}]
+Build info: version: &apos;3.1.0&apos;, revision: &apos;b94c902&apos;, time: &apos;2017-02-16 12:21:31 -0800&apos;
+System info: host: &apos;Yevheniis-MBP&apos;, ip: &apos;fe80:0:0:0:149b:efe0:c7e5:50fa%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.12.3&apos;, java.version: &apos;1.8.0_121&apos;
+Driver info: driver.version: Driver
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:91)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:141)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:601)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:241)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:128)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:155)
+	at utils.Driver.getHub(Driver.java:53)
+	at utils.Driver.getInstance(Driver.java:29)
+	at BaseTestClass.setUp(BaseTestClass.java:12)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+... Removed 18 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="Check_If_Widget_Menu_Form_Available">
+                  </a> <!-- Check_If_Widget_Menu_Form_Available -->
+                  <span class="method-name">Check_If_Widget_Menu_Form_Available</span>
+                  <div class="stack-trace">org.openqa.selenium.SessionNotCreatedException: Unable to create new remote session. desired capabilities = Capabilities [{marionette=false, browserName=Firefox, version=, platform=LINUX}], required capabilities = Capabilities [{}]
+Build info: version: &apos;3.1.0&apos;, revision: &apos;b94c902&apos;, time: &apos;2017-02-16 12:21:31 -0800&apos;
+System info: host: &apos;Yevheniis-MBP&apos;, ip: &apos;fe80:0:0:0:149b:efe0:c7e5:50fa%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.12.3&apos;, java.version: &apos;1.8.0_121&apos;
+Driver info: driver.version: Driver
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:91)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:141)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:601)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:241)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:128)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:155)
+	at utils.Driver.getHub(Driver.java:53)
+	at utils.Driver.getInstance(Driver.java:29)
+	at BaseTestClass.setUp(BaseTestClass.java:12)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+... Removed 18 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="Check_If_Widget_Slider_Form_Available">
+                  </a> <!-- Check_If_Widget_Slider_Form_Available -->
+                  <span class="method-name">Check_If_Widget_Slider_Form_Available</span>
+                  <div class="stack-trace">org.openqa.selenium.SessionNotCreatedException: Unable to create new remote session. desired capabilities = Capabilities [{marionette=false, browserName=Firefox, version=, platform=LINUX}], required capabilities = Capabilities [{}]
+Build info: version: &apos;3.1.0&apos;, revision: &apos;b94c902&apos;, time: &apos;2017-02-16 12:21:31 -0800&apos;
+System info: host: &apos;Yevheniis-MBP&apos;, ip: &apos;fe80:0:0:0:149b:efe0:c7e5:50fa%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.12.3&apos;, java.version: &apos;1.8.0_121&apos;
+Driver info: driver.version: Driver
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:91)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:141)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:601)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:241)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:128)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:155)
+	at utils.Driver.getHub(Driver.java:53)
+	at utils.Driver.getInstance(Driver.java:29)
+	at BaseTestClass.setUp(BaseTestClass.java:12)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+... Removed 18 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="Check_If_Widget_Tabs_Form_Available">
+                  </a> <!-- Check_If_Widget_Tabs_Form_Available -->
+                  <span class="method-name">Check_If_Widget_Tabs_Form_Available</span>
+                  <div class="stack-trace">org.openqa.selenium.SessionNotCreatedException: Unable to create new remote session. desired capabilities = Capabilities [{marionette=false, browserName=Firefox, version=, platform=LINUX}], required capabilities = Capabilities [{}]
+Build info: version: &apos;3.1.0&apos;, revision: &apos;b94c902&apos;, time: &apos;2017-02-16 12:21:31 -0800&apos;
+System info: host: &apos;Yevheniis-MBP&apos;, ip: &apos;fe80:0:0:0:149b:efe0:c7e5:50fa%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.12.3&apos;, java.version: &apos;1.8.0_121&apos;
+Driver info: driver.version: Driver
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:91)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:141)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:601)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:241)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:128)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:155)
+	at utils.Driver.getHub(Driver.java:53)
+	at utils.Driver.getInstance(Driver.java:29)
+	at BaseTestClass.setUp(BaseTestClass.java:12)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+... Removed 18 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="Check_If_Widget_Tooltip_Form_Available">
+                  </a> <!-- Check_If_Widget_Tooltip_Form_Available -->
+                  <span class="method-name">Check_If_Widget_Tooltip_Form_Available</span>
+                  <div class="stack-trace">org.openqa.selenium.SessionNotCreatedException: Unable to create new remote session. desired capabilities = Capabilities [{marionette=false, browserName=Firefox, version=, platform=LINUX}], required capabilities = Capabilities [{}]
+Build info: version: &apos;3.1.0&apos;, revision: &apos;b94c902&apos;, time: &apos;2017-02-16 12:21:31 -0800&apos;
+System info: host: &apos;Yevheniis-MBP&apos;, ip: &apos;fe80:0:0:0:149b:efe0:c7e5:50fa%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.12.3&apos;, java.version: &apos;1.8.0_121&apos;
+Driver info: driver.version: Driver
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:91)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:141)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:601)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:241)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:128)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:155)
+	at utils.Driver.getHub(Driver.java:53)
+	at utils.Driver.getInstance(Driver.java:29)
+	at BaseTestClass.setUp(BaseTestClass.java:12)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+... Removed 18 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Smoke_suite-class-skipped -->
+        </div> <!-- panel Smoke_suite -->
+        <div panel-name="test-xml-Smoke_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">/Users/yevheniiberezan/Downloads/git/DemoQA/src/test/testNG/Smoke.xml</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite guice-stage=&quot;DEVELOPMENT&quot; verbose=&quot;0&quot; name=&quot;Smoke suite&quot; parallel=&quot;tests&quot;&gt;
+  &lt;test name=&quot;Smoke&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;HomePageTests&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Smoke --&gt;
+&lt;/suite&gt; &lt;!-- Smoke suite --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-Smoke_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for Smoke suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">Smoke (1 class)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-Smoke_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for Smoke suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-Smoke_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for Smoke suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_Smoke_suite');
+function tableData_Smoke_suite() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(14);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'Check_If_Registration_Form_Available')
+data.setCell(0, 2, 'HomePageTests')
+data.setCell(0, 3, 0);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'Check_If_Interaction_Draggable_Form_Available')
+data.setCell(1, 2, 'HomePageTests')
+data.setCell(1, 3, 0);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'Check_If_Widget_Menu_Form_Available')
+data.setCell(2, 2, 'HomePageTests')
+data.setCell(2, 3, 0);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'Check_If_Widget_Slider_Form_Available')
+data.setCell(3, 2, 'HomePageTests')
+data.setCell(3, 3, 0);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'Check_If_Widget_Tooltip_Form_Available')
+data.setCell(4, 2, 'HomePageTests')
+data.setCell(4, 3, 0);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'Check_If_Interaction_Resizable_Form_Available')
+data.setCell(5, 2, 'HomePageTests')
+data.setCell(5, 3, 0);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'Check_If_Widget_Tabs_Form_Available')
+data.setCell(6, 2, 'HomePageTests')
+data.setCell(6, 3, 0);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'Check_If_Widget_Accordion_Form_Available')
+data.setCell(7, 2, 'HomePageTests')
+data.setCell(7, 3, 0);
+data.setCell(8, 0, 8)
+data.setCell(8, 1, 'Check_If_Widget_Datepicker_Form_Available')
+data.setCell(8, 2, 'HomePageTests')
+data.setCell(8, 3, 0);
+data.setCell(9, 0, 9)
+data.setCell(9, 1, 'Check_If_Interaction_Selectable_Form_Available')
+data.setCell(9, 2, 'HomePageTests')
+data.setCell(9, 3, 0);
+data.setCell(10, 0, 10)
+data.setCell(10, 1, 'Check_If_Interaction_Sortable_Form_Available')
+data.setCell(10, 2, 'HomePageTests')
+data.setCell(10, 3, 0);
+data.setCell(11, 0, 11)
+data.setCell(11, 1, 'Check_If_Interaction_Droppable_Form_Available')
+data.setCell(11, 2, 'HomePageTests')
+data.setCell(11, 3, 0);
+data.setCell(12, 0, 12)
+data.setCell(12, 1, 'Check_If_Widget_Autocomplete_Form_Available')
+data.setCell(12, 2, 'HomePageTests')
+data.setCell(12, 3, 0);
+data.setCell(13, 0, 13)
+data.setCell(13, 1, 'Check_If_Home_Page_Available')
+data.setCell(13, 2, 'HomePageTests')
+data.setCell(13, 3, 0);
+window.suiteTableData['Smoke_suite']= { tableData: data, tableDiv: 'times-div-Smoke_suite'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 0 ms</span>
+              <div id="times-div-Smoke_suite">
+              </div> <!-- times-div-Smoke_suite -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-Smoke_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for Smoke suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-Smoke_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">0 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-Smoke_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">HomePageTests</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">setUp</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">Check_If_Home_Page_Available</span>
+                <span class="method-start">465 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">Check_If_Interaction_Draggable_Form_Available</span>
+                <span class="method-start">466 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">Check_If_Interaction_Droppable_Form_Available</span>
+                <span class="method-start">467 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">Check_If_Interaction_Resizable_Form_Available</span>
+                <span class="method-start">468 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">Check_If_Interaction_Selectable_Form_Available</span>
+                <span class="method-start">469 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">Check_If_Interaction_Sortable_Form_Available</span>
+                <span class="method-start">469 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">Check_If_Registration_Form_Available</span>
+                <span class="method-start">470 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">Check_If_Widget_Accordion_Form_Available</span>
+                <span class="method-start">471 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">Check_If_Widget_Autocomplete_Form_Available</span>
+                <span class="method-start">472 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">Check_If_Widget_Datepicker_Form_Available</span>
+                <span class="method-start">472 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">Check_If_Widget_Menu_Form_Available</span>
+                <span class="method-start">473 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">Check_If_Widget_Slider_Form_Available</span>
+                <span class="method-start">474 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">Check_If_Widget_Tabs_Form_Available</span>
+                <span class="method-start">474 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">Check_If_Widget_Tooltip_Form_Available</span>
+                <span class="method-start">475 ms</span>
+              </div> <!-- test-method -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+</html>

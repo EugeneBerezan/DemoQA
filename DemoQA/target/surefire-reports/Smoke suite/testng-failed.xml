@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" verbose="0" name="Failed suite [Smoke suite]" parallel="tests">
+  <test name="Smoke(failed)" parallel="tests">
+    <classes>
+      <class name="HomePageTests">
+        <methods>
+          <include name="Check_If_Interaction_Droppable_Form_Available"/>
+          <include name="Check_If_Widget_Slider_Form_Available"/>
+          <include name="Check_If_Widget_Tabs_Form_Available"/>
+          <include name="Check_If_Widget_Accordion_Form_Available"/>
+          <include name="Check_If_Widget_Menu_Form_Available"/>
+          <include name="Check_If_Registration_Form_Available"/>
+          <include name="Check_If_Widget_Autocomplete_Form_Available"/>
+          <include name="Check_If_Home_Page_Available"/>
+          <include name="setUp"/>
+          <include name="Check_If_Interaction_Draggable_Form_Available"/>
+          <include name="Check_If_Interaction_Selectable_Form_Available"/>
+          <include name="Check_If_Interaction_Resizable_Form_Available"/>
+          <include name="Check_If_Interaction_Sortable_Form_Available"/>
+          <include name="Check_If_Widget_Datepicker_Form_Available"/>
+          <include name="Check_If_Widget_Tooltip_Form_Available"/>
+        </methods>
+      </class> <!-- HomePageTests -->
+    </classes>
+  </test> <!-- Smoke(failed) -->
+</suite> <!-- Failed suite [Smoke suite] -->

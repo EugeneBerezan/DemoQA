@@ -1,0 +1,7 @@
+#surefire_0
+#Tue Feb 28 12:22:25 EET 2017
+test_suite=Smoke
+user.dir=/Users/yevheniiberezan/Downloads/git/DemoQA
+localRepository=/Users/yevheniiberezan/.m2/repository
+browserName=Firefox
+basedir=/Users/yevheniiberezan/Downloads/git/DemoQA
