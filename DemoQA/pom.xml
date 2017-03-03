@@ -24,11 +24,13 @@
                 <configuration>
                     <systemPropertyVariables>
                         <browserName>
-                            ${browserName}
+                            <!--${browserName}-->
+                            Firefox
                         </browserName>
                     </systemPropertyVariables>
                     <suiteXmlFiles>
-                        <suiteXmlFile>src/test/testNG/${test_suite}.xml</suiteXmlFile>
+                        <!--<suiteXmlFile>src/test/testNG/${test_suite}.xml</suiteXmlFile>-->
+                        <suiteXmlFile>src/test/testNG/Smoke.xml</suiteXmlFile>
                     </suiteXmlFiles>
                 </configuration>
             </plugin>

@@ -16,22 +16,17 @@ public class Driver {
 
     private static final int TIME_TO_WAIT_IN_SECONDS = 10;
     private static WebDriver driver = null;
-    private static String nodeURL = "http://localhost:4446/wd/hub";
+    private static String nodeURL = "http://localhost:4444/wd/hub";
     private static String browser = System.getProperty("browserName");
-//    private static String browser = "Firefox"; // stub
 
     private Driver() {
 
     }
 
-    public static void setBrowser(String browser) {
-        Driver.browser = browser;
-    }
-
     public static WebDriver getInstance() throws MalformedURLException {
         if (driver == null) {
-            getDriver(browser);
-//            getHub(browser);
+//            getDriver(browser);
+            getHub(browser);
             driver.manage().window().maximize();
             driver.manage().timeouts().implicitlyWait(TIME_TO_WAIT_IN_SECONDS, TimeUnit.SECONDS);
         }
@@ -43,18 +38,18 @@ public class Driver {
             case "Chrome":
                 System.setProperty("webdriver.chrome.driver", "src/main/resources/chromedriver");
                 DesiredCapabilities capabilitiesChrome = DesiredCapabilities.chrome();
-                capabilitiesChrome.setBrowserName(browser);
+                capabilitiesChrome.setBrowserName(browser.toLowerCase());
                 capabilitiesChrome.setPlatform(Platform.LINUX);
+//                capabilitiesChrome.setPlatform(Platform.MAC);
                 capabilitiesChrome.setVersion("");
                 driver = new RemoteWebDriver(new URL(nodeURL), capabilitiesChrome);
                 break;
             case "Firefox":
                 System.setProperty("webdriver.gecko.driver", "src/main/resources/geckodriver");
                 DesiredCapabilities capabilitiesFirefox = DesiredCapabilities.firefox();
-                capabilitiesFirefox.setBrowserName(browser);
+                capabilitiesFirefox.setBrowserName(browser.toLowerCase());
                 capabilitiesFirefox.setPlatform(Platform.LINUX);
-                capabilitiesFirefox.setVersion("");
-                capabilitiesFirefox.setCapability("marionette", false);
+//                capabilitiesFirefox.setPlatform(Platform.MAC);
                 driver = new RemoteWebDriver(new URL(nodeURL), capabilitiesFirefox);
                 break;
             default:
